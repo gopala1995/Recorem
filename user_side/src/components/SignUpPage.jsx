@@ -49,7 +49,7 @@ export const SignUpPage = () => {
       cpassword &&
       mobile
     ) {
-      fetch(`http://localhost:8000/register`, {
+      fetch(`http://localhost:7000/register`, {
         method: "POST",
         mode: "cors", 
         cache: "no-cache", 

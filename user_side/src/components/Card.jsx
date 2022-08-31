@@ -35,7 +35,7 @@ export const Card = () => {
         username: Username,
         password: Password,
       };
-      fetch(`http://localhost:8000/login`, {
+      fetch(`http://localhost:7000/login`, {
         method: "POST",
         mode: "cors", 
         cache: "no-cache", 
