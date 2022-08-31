@@ -31,7 +31,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-const DashBoard = () => {
+const Dash = () => {
   const classes = useStyles();
   const [userData, setUserdata] = React.useState([]);
 
@@ -62,4 +62,4 @@ const DashBoard = () => {
     );
   }
 };
-export default DashBoard;
+export default Dash;

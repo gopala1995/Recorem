@@ -19,7 +19,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export const SignUp = () => {
+export const Card = () => {
   const classes = useStyles();
 
   let [Username, setUsername] = useState("");
@@ -35,7 +35,7 @@ export const SignUp = () => {
         username: Username,
         password: Password,
       };
-      fetch(`http://localhost:7000/login`, {
+      fetch(`http://localhost:8000/login`, {
         method: "POST",
         mode: "cors", 
         cache: "no-cache", 

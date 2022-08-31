@@ -20,7 +20,7 @@ const useStyles = makeStyles((theme) => ({
     },
   },
 }));
-export const Register = () => {
+export const SignUpPage = () => {
   const classes = useStyles();
   const [username, setUserName] = React.useState("");
   const [email, setEmai] = React.useState("");
@@ -49,7 +49,7 @@ export const Register = () => {
       cpassword &&
       mobile
     ) {
-      fetch(`http://localhost:7000/register`, {
+      fetch(`http://localhost:8000/register`, {
         method: "POST",
         mode: "cors", 
         cache: "no-cache", 
